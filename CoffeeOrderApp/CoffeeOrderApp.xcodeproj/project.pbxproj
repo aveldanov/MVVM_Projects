@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		21775E0525130A8800D87164 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21775E0425130A8800D87164 /* AppDelegate.swift */; };
 		21775E0725130A8800D87164 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21775E0625130A8800D87164 /* SceneDelegate.swift */; };
-		21775E0925130A8800D87164 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21775E0825130A8800D87164 /* ViewController.swift */; };
 		21775E0C25130A8800D87164 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21775E0A25130A8800D87164 /* Main.storyboard */; };
 		21775E0E25130A8900D87164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21775E0D25130A8900D87164 /* Assets.xcassets */; };
 		21775E1125130A8900D87164 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21775E0F25130A8900D87164 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		21775E0125130A8800D87164 /* CoffeeOrderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeOrderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21775E0425130A8800D87164 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21775E0625130A8800D87164 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21775E0825130A8800D87164 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21775E0B25130A8800D87164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21775E0D25130A8900D87164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21775E1025130A8900D87164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,22 @@
 		21775E0325130A8800D87164 /* CoffeeOrderApp */ = {
 			isa = PBXGroup;
 			children = (
+				21775E18251450B900D87164 /* Controllers */,
 				21775E0425130A8800D87164 /* AppDelegate.swift */,
 				21775E0625130A8800D87164 /* SceneDelegate.swift */,
-				21775E0825130A8800D87164 /* ViewController.swift */,
 				21775E0A25130A8800D87164 /* Main.storyboard */,
 				21775E0D25130A8900D87164 /* Assets.xcassets */,
 				21775E0F25130A8900D87164 /* LaunchScreen.storyboard */,
 				21775E1225130A8900D87164 /* Info.plist */,
 			);
 			path = CoffeeOrderApp;
+			sourceTree = "<group>";
+		};
+		21775E18251450B900D87164 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21775E0925130A8800D87164 /* ViewController.swift in Sources */,
 				21775E0525130A8800D87164 /* AppDelegate.swift in Sources */,
 				21775E0725130A8800D87164 /* SceneDelegate.swift in Sources */,
 			);
