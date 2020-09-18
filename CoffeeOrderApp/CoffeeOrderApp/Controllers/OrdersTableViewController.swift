@@ -18,14 +18,21 @@ class OrdersTableViewController: UITableViewController {
     //MARK: - Private Methods
     
     private func populateOrders(){
-        guard let coffeeOrdersURL = URL(string: "https://guarded-retreat-82533.herokuapp.com") else {
+        guard let coffeeOrdersURL = URL(string: "https://guarded-retreat-82533.herokuapp.com/orders") else {
             fatalError("URL is not correct")
             return
         }
         
         let resource = Resource<[Order]>(url: coffeeOrdersURL)
         
-        WebService().load(resource: <#T##Resource<Decodable & Encodable>#>, completion: <#T##(Result<Decodable & Encodable, NetworkError>) -> Void#>)
+        WebService().load(resource: resource) { (result) in
+            switch result{
+            case .success(let orders):
+                print(orders)
+            case .failure(let error):
+                print(error)
+            }
+        }
         
         
     }
