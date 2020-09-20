@@ -20,7 +20,6 @@ class OrdersTableViewController: UITableViewController {
     private func populateOrders(){
         guard let coffeeOrdersURL = URL(string: "https://guarded-retreat-82533.herokuapp.com/orders") else {
             fatalError("URL is not correct")
-            return
         }
         
         let resource = Resource<[Order]>(url: coffeeOrdersURL)
