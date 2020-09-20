@@ -9,6 +9,8 @@ import UIKit
 
 class OrdersTableViewController: UITableViewController {
 
+    var orderListViewModel = OrderListViewModel() //all data to show on screen
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         populateOrders()
@@ -24,10 +26,12 @@ class OrdersTableViewController: UITableViewController {
         
         let resource = Resource<[Order]>(url: coffeeOrdersURL)
         
-        WebService().load(resource: resource) { (result) in
+        WebService().load(resource: resource) { [weak self] result in
             switch result{
             case .success(let orders):
                 print(orders)
+                self?.orderListViewModel.ordersViewModel = orders.map(OrderViewModel.init)
+                self?.tableView.reloadData()
             case .failure(let error):
                 print(error)
             }
