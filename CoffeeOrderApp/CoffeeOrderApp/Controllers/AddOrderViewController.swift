@@ -66,6 +66,5 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
         viewModel.email = email
         viewModel.selectedSize = coffeeSize
         viewModel.selectedType = viewModel.types[indexPath.row]
-        
     }
 }
