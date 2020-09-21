@@ -7,13 +7,29 @@
 
 import UIKit
 
-class AddOrderViewController: UIViewController {
-
+class AddOrderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    private var viewModel = AddCoffeeOrderViewModel()
+    private var coffeeSizesSegmentedCControl: UISegmentedControl!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
     }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.viewModel.types.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeOrderTypeTableViewCell", for: indexPath)
+        cell.textLabel?.text = viewModel.types[indexPath.row]
+        return cell
+    }
+    
     
 
     /*
