@@ -9,7 +9,7 @@ import UIKit
 
 class AddOrderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private var viewModel = AddCoffeeOrderViewModel()
-    private var coffeeSizesSegmentedCControl: UISegmentedControl!
+    private var coffeeSizesSegmentedControl: UISegmentedControl!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,6 +18,18 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         setupUI()
     }
+    
+    private func setupUI(){
+        coffeeSizesSegmentedControl = UISegmentedControl(items: viewModel.sizes)
+        coffeeSizesSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(coffeeSizesSegmentedControl)
+        
+        coffeeSizesSegmentedControl.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 20).isActive = true
+        coffeeSizesSegmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+    }
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
