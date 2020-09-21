@@ -12,6 +12,8 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
     private var coffeeSizesSegmentedControl: UISegmentedControl!
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
     
     override func viewDidLoad() {
@@ -51,14 +53,19 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
 
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func save(){
+        let name = nameTextField.text
+        let email = emailTextField.text
+        let coffeeSize = coffeeSizesSegmentedControl.titleForSegment(at: coffeeSizesSegmentedControl.selectedSegmentIndex)
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("Error in selecting coffee")
+        }
+        
+        viewModel.name = name
+        viewModel.email = email
+        viewModel.selectedSize = coffeeSize
+        viewModel.selectedType = viewModel.types[indexPath.row]
+        
     }
-    */
-
 }
