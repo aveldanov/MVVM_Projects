@@ -48,6 +48,10 @@
                                         <constraint firstItem="lqZ-s8-H9v" firstAttribute="leading" secondItem="5zi-gA-h8t" secondAttribute="leadingMargin" id="tvs-5V-7Oo"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="89s-qZ-yp0" id="fAG-qM-GcN"/>
+                                    <outlet property="titleLabel" destination="Lh0-FZ-dhC" id="qd0-V2-Xxq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
