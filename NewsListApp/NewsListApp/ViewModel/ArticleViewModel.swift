@@ -36,9 +36,6 @@ struct ArticleViewModel{
     
 }
 
-
-
-
 extension ArticleViewModel{
     init(_ article: Article) {
         self.article = article
