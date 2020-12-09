@@ -64,6 +64,7 @@
 		21CA2DC82580761200C7E50D /* NewsListApp */ = {
 			isa = PBXGroup;
 			children = (
+				21CA2DF825809B3700C7E50D /* Cell */,
 				21CA2DF42580959C00C7E50D /* ViewModel */,
 				21CA2DEF25808C7300C7E50D /* Model */,
 				21CA2DEA2580871900C7E50D /* Services */,
@@ -109,6 +110,13 @@
 				21CA2DF5258095BC00C7E50D /* ArticleViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		21CA2DF825809B3700C7E50D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
