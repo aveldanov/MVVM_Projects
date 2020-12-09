@@ -17,6 +17,7 @@
 		21CA2DEC2580873600C7E50D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA2DEB2580873600C7E50D /* WebService.swift */; };
 		21CA2DF125808C7E00C7E50D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA2DF025808C7E00C7E50D /* Article.swift */; };
 		21CA2DF6258095BC00C7E50D /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA2DF5258095BC00C7E50D /* ArticleViewModel.swift */; };
+		21CA2DFA25809B4D00C7E50D /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA2DF925809B4D00C7E50D /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		21CA2DEB2580873600C7E50D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		21CA2DF025808C7E00C7E50D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		21CA2DF5258095BC00C7E50D /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		21CA2DF925809B4D00C7E50D /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		21CA2DF825809B3700C7E50D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				21CA2DF925809B4D00C7E50D /* ArticleTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				21CA2DEC2580873600C7E50D /* WebService.swift in Sources */,
 				21CA2DF125808C7E00C7E50D /* Article.swift in Sources */,
 				21CA2DCA2580761200C7E50D /* AppDelegate.swift in Sources */,
+				21CA2DFA25809B4D00C7E50D /* ArticleTableViewCell.swift in Sources */,
 				21CA2DD42580761200C7E50D /* NewsListApp.xcdatamodeld in Sources */,
 				21CA2DF6258095BC00C7E50D /* ArticleViewModel.swift in Sources */,
 				21CA2DCC2580761200C7E50D /* SceneDelegate.swift in Sources */,
