@@ -16,6 +16,7 @@
 		21CA2DE42580771300C7E50D /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA2DE32580771300C7E50D /* NewsListTableViewController.swift */; };
 		21CA2DEC2580873600C7E50D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA2DEB2580873600C7E50D /* WebService.swift */; };
 		21CA2DF125808C7E00C7E50D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA2DF025808C7E00C7E50D /* Article.swift */; };
+		21CA2DF6258095BC00C7E50D /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA2DF5258095BC00C7E50D /* ArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		21CA2DE32580771300C7E50D /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		21CA2DEB2580873600C7E50D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		21CA2DF025808C7E00C7E50D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		21CA2DF5258095BC00C7E50D /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		21CA2DC82580761200C7E50D /* NewsListApp */ = {
 			isa = PBXGroup;
 			children = (
+				21CA2DF42580959C00C7E50D /* ViewModel */,
 				21CA2DEF25808C7300C7E50D /* Model */,
 				21CA2DEA2580871900C7E50D /* Services */,
 				21CA2DE2258076CF00C7E50D /* Controllers */,
@@ -98,6 +101,14 @@
 				21CA2DF025808C7E00C7E50D /* Article.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		21CA2DF42580959C00C7E50D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21CA2DF5258095BC00C7E50D /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				21CA2DF125808C7E00C7E50D /* Article.swift in Sources */,
 				21CA2DCA2580761200C7E50D /* AppDelegate.swift in Sources */,
 				21CA2DD42580761200C7E50D /* NewsListApp.xcdatamodeld in Sources */,
+				21CA2DF6258095BC00C7E50D /* ArticleViewModel.swift in Sources */,
 				21CA2DCC2580761200C7E50D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
