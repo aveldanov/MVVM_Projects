@@ -56,7 +56,12 @@ class NewsListTableViewController: UITableViewController {
         }
         
      
+        let articleViewModel = articleListViewModel.articleAtIndex(indexPath.row)
      
+        cell.titleLabel.text = articleViewModel.title
+        cell.descriptionLabel.text = articleViewModel.description
+        
+        
      return cell
      }
     
