@@ -9,6 +9,9 @@ import UIKit
 
 class NewsListTableViewController: UITableViewController {
 
+    private var articleListViewModel: ArticleListViewModel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -18,8 +21,11 @@ class NewsListTableViewController: UITableViewController {
     private func setup(){
         let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=9aff2ae2edb14019be1df1fe522dee01")!
         
-        WebService().getArticles(url: url) { _ in
-            
+        WebService().getArticles(url: url) { articles in
+            if let articles = articles{
+    
+            articleListViewModel = ArticleListViewModel(articles: articles)
+        }
         }
         
     }
