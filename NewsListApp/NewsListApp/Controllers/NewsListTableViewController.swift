@@ -50,9 +50,12 @@ class NewsListTableViewController: UITableViewController {
     
     
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ArticleTableViewCell else {
+            fatalError("cell not found")
+        }
+        
      
-     // Configure the cell...
      
      return cell
      }
