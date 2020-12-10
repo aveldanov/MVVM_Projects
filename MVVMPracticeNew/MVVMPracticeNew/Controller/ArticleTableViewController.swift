@@ -1,29 +1,23 @@
 //
-//  ListViewTableViewController.swift
-//  MVVMPractice
+//  ArticleTableViewController.swift
+//  MVVMPracticeNew
 //
 //  Created by Veldanov, Anton on 12/9/20.
 //
 
 import UIKit
 
-class ListViewTableViewController: UITableViewController {
-    private var articleListViewModel: ArticleListViewModel!
+class ArticleTableViewController: UITableViewController {
+
+    let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=9aff2ae2edb14019be1df1fe522dee01")!
     
+    private var articleListLoaded: ArticleListViewModel?
     
-    
-    var articlesLoaded: ArticleList?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        WebServices().getArticles { (articles) in
+        WebService().getArticles(url) { articles in
             if let articles = articles{
-                self.articleListViewModel = ArticleListViewModel(articles: articles)
-//                self.articlesLoaded = ArticleList(articles: articles)
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+                self.articleListLoaded = ArticleListViewModel(articlesViewModel: articles)
             }
         }
     }
@@ -32,27 +26,22 @@ class ListViewTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return articleListLoaded == nil ? 0 : articleListLoaded!.numberOfSections
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        
-        return articleListViewModel == nil ? 0 : articleListViewModel.numberOfRowInSection
+        return articleListLoaded!.numberOfRowPerSection()
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArticleTableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        
-//        cell.titleLabel.text = articleListViewModel.articles[indexPath.row].title
-        cell.titleLabel.text = articleListViewModel.articleAtIndex(indexPath.row).title
-        
+
         return cell
     }
-
+    
 
     /*
     // Override to support conditional editing of the table view.

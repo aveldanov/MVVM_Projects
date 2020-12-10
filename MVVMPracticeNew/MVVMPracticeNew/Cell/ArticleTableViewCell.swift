@@ -1,6 +1,6 @@
 //
 //  ArticleTableViewCell.swift
-//  MVVMPractice
+//  MVVMPracticeNew
 //
 //  Created by Veldanov, Anton on 12/9/20.
 //
@@ -9,9 +9,6 @@ import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
 
-    
-    @IBOutlet weak var titleLabel: UILabel!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
