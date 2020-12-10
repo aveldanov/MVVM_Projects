@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Article Table View Controller-->
+        <!--Great News-->
         <scene sceneID="Q8F-5e-edz">
             <objects>
                 <tableViewController id="2P9-0I-fBp" customClass="ArticleTableViewController" customModule="MVVMPracticeNew" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                             <outlet property="delegate" destination="2P9-0I-fBp" id="XR0-XW-9Fk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1pJ-zb-saT"/>
+                    <navigationItem key="navigationItem" title="Great News" id="1pJ-zb-saT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCu-fM-gAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
