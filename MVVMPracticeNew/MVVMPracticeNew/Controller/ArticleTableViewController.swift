@@ -18,6 +18,10 @@ class ArticleTableViewController: UITableViewController {
         WebService().getArticles(url) { articles in
             if let articles = articles{
                 self.articleListLoaded = ArticleListViewModel(articlesViewModel: articles)
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
         }
     }
@@ -36,8 +40,13 @@ class ArticleTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArticleTableViewCell
+        
+        
+        cell.titleL.text = articleListLoaded?.rowAtIndex(indexPath.row).article.title
+        
+        cell.descriptionL.text = articleListLoaded?.rowAtIndex(indexPath.row).article.description
+        
 
         return cell
     }

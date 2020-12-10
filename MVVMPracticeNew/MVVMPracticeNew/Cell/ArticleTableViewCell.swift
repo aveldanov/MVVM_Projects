@@ -9,6 +9,8 @@ import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleL: UILabel!
+    @IBOutlet weak var descriptionL: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
