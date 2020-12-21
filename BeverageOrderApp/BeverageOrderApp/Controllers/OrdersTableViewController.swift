@@ -11,7 +11,31 @@ class OrdersTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        populateOrder()
     }
+    
+    private func populateOrder(){
+        guard let coffeeOrdersUrl = URL(string: "https://guarded-retreat-82533.herokuapp.com/orders") else{
+            fatalError("URL was not correct")
+            return
+        }
+        
+        let resource = Resource<[Order]>(url: coffeeOrdersUrl)
+        
+        
+        WebService().load(resource: resource) { result in
+            switch result{
+            case .success(let orders):
+                print(orders)
+            case .failure(let error):
+                print(error)
+            
+            }
+        }
+        
+    }
+    
+    
 
     // MARK: - Table view data source
 
