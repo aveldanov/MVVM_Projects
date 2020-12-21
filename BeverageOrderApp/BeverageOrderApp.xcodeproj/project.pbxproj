@@ -13,6 +13,8 @@
 		216EBA9B258DE34800AD0824 /* BeverageOrderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 216EBA99258DE34800AD0824 /* BeverageOrderApp.xcdatamodeld */; };
 		216EBA9D258DE34A00AD0824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216EBA9C258DE34A00AD0824 /* Assets.xcassets */; };
 		216EBAA0258DE34A00AD0824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216EBA9E258DE34A00AD0824 /* LaunchScreen.storyboard */; };
+		21BAD61725902ECF003232E1 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BAD61625902ECF003232E1 /* OrdersTableViewController.swift */; };
+		21BAD61A25902F07003232E1 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BAD61925902F07003232E1 /* AddOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		216EBA9C258DE34A00AD0824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		216EBA9F258DE34A00AD0824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		216EBAA1258DE34A00AD0824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BAD61625902ECF003232E1 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		21BAD61925902F07003232E1 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		216EBAA9258DE38B00AD0824 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				21BAD61625902ECF003232E1 /* OrdersTableViewController.swift */,
+				21BAD61925902F07003232E1 /* AddOrderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -145,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21BAD61725902ECF003232E1 /* OrdersTableViewController.swift in Sources */,
 				216EBA91258DE34800AD0824 /* AppDelegate.swift in Sources */,
+				21BAD61A25902F07003232E1 /* AddOrderViewController.swift in Sources */,
 				216EBA93258DE34800AD0824 /* SceneDelegate.swift in Sources */,
 				216EBA9B258DE34800AD0824 /* BeverageOrderApp.xcdatamodeld in Sources */,
 			);

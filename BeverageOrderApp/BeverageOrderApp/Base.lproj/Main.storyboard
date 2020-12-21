@@ -11,7 +11,7 @@
         <!--Orders-->
         <scene sceneID="b5t-rX-V6v">
             <objects>
-                <tableViewController id="UNv-m9-426" sceneMemberID="viewController">
+                <tableViewController id="UNv-m9-426" customClass="OrdersTableViewController" customModule="BeverageOrderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZaN-cW-SBC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
         <!--Add New Order-->
         <scene sceneID="Q1F-4t-tr7">
             <objects>
-                <viewController id="2j3-N0-JHi" sceneMemberID="viewController">
+                <viewController id="2j3-N0-JHi" customClass="AddOrderViewController" customModule="BeverageOrderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RDG-Li-WXQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
