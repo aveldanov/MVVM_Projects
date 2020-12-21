@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" title="Orders" id="HkQ-Yx-f9Y">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TcS-XI-iSR">
                             <connections>
-                                <segue destination="xVX-7N-dHg" kind="presentation" id="aaD-gu-llB"/>
+                                <segue destination="xVX-7N-dHg" kind="presentation" modalPresentationStyle="fullScreen" id="aaD-gu-llB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -48,15 +48,15 @@
             <objects>
                 <viewController id="2j3-N0-JHi" customClass="AddOrderViewController" customModule="BeverageOrderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RDG-Li-WXQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ue8-lO-2Fd">
-                                <rect key="frame" x="0.0" y="56" width="414" height="421"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="448"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K8u-6u-OxU">
-                                <rect key="frame" x="107" y="584" width="200" height="34"/>
+                                <rect key="frame" x="107" y="643" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="6UE-Bz-Gq6"/>
                                 </constraints>
@@ -64,7 +64,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-Rq-gHL">
-                                <rect key="frame" x="107" y="640" width="200" height="34"/>
+                                <rect key="frame" x="107" y="699" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="5L2-MW-VP3"/>
                                 </constraints>
@@ -72,7 +72,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fcy-sP-Iif">
-                                <rect key="frame" x="104" y="517" width="206" height="32"/>
+                                <rect key="frame" x="104" y="576" width="206" height="32"/>
                                 <segments>
                                     <segment title="Small"/>
                                     <segment title="Medium"/>
@@ -95,7 +95,9 @@
                             <constraint firstItem="ue8-lO-2Fd" firstAttribute="leading" secondItem="et7-8p-HUZ" secondAttribute="leading" id="yRh-Kn-4Lv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add New Order" id="Dwm-De-oUb"/>
+                    <navigationItem key="navigationItem" title="Add New Order" id="Dwm-De-oUb">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="wxf-H2-jGO"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSA-EF-N0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,7 +128,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xVX-7N-dHg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WeW-pd-8oV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
