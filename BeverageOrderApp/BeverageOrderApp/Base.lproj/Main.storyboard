@@ -97,6 +97,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="Dwm-De-oUb">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="wxf-H2-jGO"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="y3V-Sd-SXm"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSA-EF-N0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
