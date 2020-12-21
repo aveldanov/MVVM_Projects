@@ -55,32 +55,41 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="421"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fcy-sP-Iif">
-                                <rect key="frame" x="142" y="516" width="131" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K8u-6u-OxU">
+                                <rect key="frame" x="107" y="584" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6UE-Bz-Gq6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-Rq-gHL">
+                                <rect key="frame" x="107" y="640" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5L2-MW-VP3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fcy-sP-Iif">
+                                <rect key="frame" x="104" y="517" width="206" height="32"/>
                                 <segments>
                                     <segment title="Small"/>
                                     <segment title="Medium"/>
                                     <segment title="Large"/>
                                 </segments>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K8u-6u-OxU">
-                                <rect key="frame" x="159" y="584" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-Rq-gHL">
-                                <rect key="frame" x="159" y="640" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="et7-8p-HUZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="QOu-Rq-gHL" firstAttribute="centerX" secondItem="RDG-Li-WXQ" secondAttribute="centerX" id="1st-F0-Coj"/>
                             <constraint firstItem="ue8-lO-2Fd" firstAttribute="top" secondItem="et7-8p-HUZ" secondAttribute="top" id="Lhh-rY-jN8"/>
+                            <constraint firstItem="fcy-sP-Iif" firstAttribute="centerX" secondItem="RDG-Li-WXQ" secondAttribute="centerX" id="SZm-N2-uOX"/>
+                            <constraint firstItem="QOu-Rq-gHL" firstAttribute="top" secondItem="K8u-6u-OxU" secondAttribute="bottom" constant="22" id="YrT-ky-NXy"/>
+                            <constraint firstItem="K8u-6u-OxU" firstAttribute="top" secondItem="fcy-sP-Iif" secondAttribute="bottom" constant="36" id="aTr-am-d82"/>
+                            <constraint firstItem="K8u-6u-OxU" firstAttribute="centerX" secondItem="RDG-Li-WXQ" secondAttribute="centerX" id="b6E-fV-6mO"/>
+                            <constraint firstItem="fcy-sP-Iif" firstAttribute="top" secondItem="ue8-lO-2Fd" secondAttribute="bottom" constant="40" id="e13-Yy-Fiu"/>
                             <constraint firstItem="ue8-lO-2Fd" firstAttribute="width" secondItem="RDG-Li-WXQ" secondAttribute="width" id="gYW-GU-75k"/>
                             <constraint firstItem="ue8-lO-2Fd" firstAttribute="height" secondItem="RDG-Li-WXQ" secondAttribute="height" multiplier="0.5" id="mER-gx-TbE"/>
                             <constraint firstItem="ue8-lO-2Fd" firstAttribute="leading" secondItem="et7-8p-HUZ" secondAttribute="leading" id="yRh-Kn-4Lv"/>
