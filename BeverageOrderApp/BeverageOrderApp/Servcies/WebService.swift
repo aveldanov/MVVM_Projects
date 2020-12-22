@@ -33,7 +33,6 @@ class WebService {
                 DispatchQueue.main.async {
                     completion(.success(result))
                 }
-                
             }else{
                 completion(.failure(.decodingError))
             }
