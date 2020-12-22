@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News List Table View Controller-->
+        <!--News-->
         <scene sceneID="UFl-l1-Hvc">
             <objects>
                 <tableViewController id="4E1-Wj-ziV" customClass="NewsListTableViewController" customModule="StocksApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                             <outlet property="delegate" destination="4E1-Wj-ziV" id="u5a-yb-Kn3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jCo-zq-JWY"/>
+                    <navigationItem key="navigationItem" title="News" id="jCo-zq-JWY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlv-R8-cCA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
