@@ -10,18 +10,26 @@ import UIKit
 class NewsListTableViewController: UITableViewController {
     
     
+    private var articleListViewModel: ArticleListViewModel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setup()
     }
     
     func setup(){
-        let urlString = "https://newsapi.org/v2/top-headlines?country=us&apiKey=9aff2ae2edb14019be1df1fe522dee01"
-        let url = URL(string: urlString)!
-
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=9aff2ae2edb14019be1df1fe522dee01")!
         WebService().getArticles(url: url) { (articles) in
+            if let articles = articles{
+                self.articleListViewModel = ArticleListViewModel(articles: articles)
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+            
+            
             
         }
         
@@ -30,24 +38,29 @@ class NewsListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+       
+        return articleListViewModel == nil ? 0 : articleListViewModel.numberOfSections
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+
+        return articleListViewModel.numberOfRowsInSection(section)
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ArticleTableViewCell else{
+            fatalError("No cell found")
+        }
+        
+        let articleViewModel = articleListViewModel.articleAtIndex(indexPath.row)
 
-        // Configure the cell...
+        cell.titleLabel.text = articleViewModel.title
+        cell.descriptionLabel.text = articleViewModel.description
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
