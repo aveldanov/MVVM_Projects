@@ -27,17 +27,14 @@
                                             <rect key="frame" x="20" y="11" width="374" height="58"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92B-1T-New">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="27.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="28.5"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8d-eT-4d2">
-                                                    <rect key="frame" x="0.0" y="37.5" width="374" height="20.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20.5" id="PDf-Iz-hLJ"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="38.5" width="374" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -45,10 +42,10 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="pPt-ui-U7H" secondAttribute="trailing" id="5uI-5x-Xak"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="pPt-ui-U7H" secondAttribute="bottom" id="6cu-cl-0v8"/>
-                                        <constraint firstItem="pPt-ui-U7H" firstAttribute="top" secondItem="bx9-Fg-zYT" secondAttribute="topMargin" id="ehz-zv-7Db"/>
-                                        <constraint firstItem="pPt-ui-U7H" firstAttribute="leading" secondItem="bx9-Fg-zYT" secondAttribute="leadingMargin" id="y1y-Rl-dj2"/>
+                                        <constraint firstItem="pPt-ui-U7H" firstAttribute="leading" secondItem="bx9-Fg-zYT" secondAttribute="leadingMargin" id="84y-KZ-LEU"/>
+                                        <constraint firstItem="pPt-ui-U7H" firstAttribute="top" secondItem="bx9-Fg-zYT" secondAttribute="topMargin" id="SFc-NY-3EQ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="pPt-ui-U7H" secondAttribute="trailing" id="SrA-9g-0oz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pPt-ui-U7H" secondAttribute="bottom" id="dii-bQ-tjy"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
