@@ -62,6 +62,7 @@
 		2190555325F5B1130075EA59 /* IntoNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				2190557E25F9B8C30075EA59 /* ViewModels */,
 				2190557925F9B4390075EA59 /* Model */,
 				2190557325F9B04C0075EA59 /* Services */,
 				2190556D25F5B1470075EA59 /* Controllers */,
@@ -98,6 +99,13 @@
 				2190557A25F9B44A0075EA59 /* Article.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2190557E25F9B8C30075EA59 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
