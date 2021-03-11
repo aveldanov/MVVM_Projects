@@ -20,6 +20,6 @@ class WebService {
                     print(data)
                 }
             }
-        }
+        }.resume()
     }
 }
