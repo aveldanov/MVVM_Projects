@@ -9,11 +9,16 @@ import Foundation
 
 
 class WebService {
-    func getArticles(url: URL, completion: ([Article])->()){
+    func getArticles(url: URL, completion: ([Any])->()){
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error{
                 print(error.localizedDescription)
-                completion(nil)
+//                completion(nil)
+            } else{
+                if let data = data{
+                    
+                    print(data)
+                }
             }
         }
     }
