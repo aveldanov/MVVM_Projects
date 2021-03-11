@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="lN4-ma-JBc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="lN4-ma-JBc" customClass="ArticleTableViewCell" customModule="IntoNewsApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lN4-ma-JBc" id="Gie-J9-ZaS">
@@ -48,6 +48,10 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="587-2q-jZi" secondAttribute="trailing" id="v8p-K6-eQY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="W8U-Aj-emG" id="Zeo-2T-CUU"/>
+                                    <outlet property="titleLabel" destination="bAL-86-8Bx" id="Wnb-5e-tCd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

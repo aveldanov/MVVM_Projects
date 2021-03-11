@@ -9,6 +9,8 @@ import UIKit
 
 class NewsListTableViewController: UITableViewController {
 
+    private var artileListViewModel: ArticleListViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
