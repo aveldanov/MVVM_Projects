@@ -48,9 +48,15 @@ class NewsListTableViewController: UITableViewController {
         return articleListViewModel.numberOfRowsInSection(section)
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ArticleTableViewCell else{
+            fatalError("ArticalCell is not found")
+        }
         
-        
+        let articleViewModel = articleListViewModel.articleAtIndex(indexPath.row)
+        cell.titleLabel.text = articleViewModel.title
+        cell.descriptionLabel.text = articleViewModel.description
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
         return cell
     }
     
@@ -109,4 +115,4 @@ class NewsListTableViewController: UITableViewController {
  // Pass the selected object to the new view controller.
  }
  */
-}
+
