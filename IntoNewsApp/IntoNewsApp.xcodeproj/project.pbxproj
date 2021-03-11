@@ -58,6 +58,7 @@
 		2190555325F5B1130075EA59 /* IntoNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				2190557325F9B04C0075EA59 /* Services */,
 				2190556D25F5B1470075EA59 /* Controllers */,
 				2190555425F5B1130075EA59 /* AppDelegate.swift */,
 				2190555625F5B1130075EA59 /* SceneDelegate.swift */,
@@ -76,6 +77,21 @@
 				2190556E25F5B1780075EA59 /* NewsListTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2190557325F9B04C0075EA59 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2190557425F9B0520075EA59 /* WebService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2190557425F9B0520075EA59 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
