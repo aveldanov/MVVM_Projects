@@ -14,6 +14,7 @@
 		2190556125F5B1150075EA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2190556025F5B1150075EA59 /* Assets.xcassets */; };
 		2190556425F5B1150075EA59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2190556225F5B1150075EA59 /* LaunchScreen.storyboard */; };
 		2190556F25F5B1780075EA59 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2190556E25F5B1780075EA59 /* NewsListTableViewController.swift */; };
+		2190557625F9B0820075EA59 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2190557525F9B0820075EA59 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2190556325F5B1150075EA59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2190556525F5B1150075EA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2190556E25F5B1780075EA59 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
+		2190557525F9B0820075EA59 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,16 +84,9 @@
 		2190557325F9B04C0075EA59 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				2190557425F9B0520075EA59 /* WebService */,
+				2190557525F9B0820075EA59 /* WebService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		2190557425F9B0520075EA59 /* WebService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2190556F25F5B1780075EA59 /* NewsListTableViewController.swift in Sources */,
+				2190557625F9B0820075EA59 /* WebService.swift in Sources */,
 				2190555F25F5B1130075EA59 /* IntoNewsApp.xcdatamodeld in Sources */,
 				2190555525F5B1130075EA59 /* AppDelegate.swift in Sources */,
 				2190555725F5B1130075EA59 /* SceneDelegate.swift in Sources */,
