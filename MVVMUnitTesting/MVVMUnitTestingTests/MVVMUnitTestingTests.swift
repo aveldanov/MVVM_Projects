@@ -17,5 +17,12 @@ class MVVMUnitTestingTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    
+    func test_addTwoNumbers(){
+        let calculator = Calculator()
+        let result = calculator.add(2,3)
+        
+        XCTAssertEqual(result, 5)
+    }
 
 }

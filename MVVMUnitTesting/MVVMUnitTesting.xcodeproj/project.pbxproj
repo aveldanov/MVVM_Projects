@@ -15,6 +15,7 @@
 		219055A225F9CA390075EA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219055A125F9CA390075EA59 /* Assets.xcassets */; };
 		219055A525F9CA390075EA59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219055A325F9CA390075EA59 /* LaunchScreen.storyboard */; };
 		219055B425F9CCC80075EA59 /* MVVMUnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219055B325F9CCC80075EA59 /* MVVMUnitTestingTests.swift */; };
+		219055C025F9CE030075EA59 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219055BF25F9CE030075EA59 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		219055B125F9CCC80075EA59 /* MVVMUnitTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUnitTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		219055B325F9CCC80075EA59 /* MVVMUnitTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUnitTestingTests.swift; sourceTree = "<group>"; };
 		219055B525F9CCC80075EA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219055BF25F9CE030075EA59 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				219055A325F9CA390075EA59 /* LaunchScreen.storyboard */,
 				219055A625F9CA390075EA59 /* Info.plist */,
 				2190559E25F9CA370075EA59 /* MVVMUnitTesting.xcdatamodeld */,
+				219055BF25F9CE030075EA59 /* Calculator.swift */,
 			);
 			path = MVVMUnitTesting;
 			sourceTree = "<group>";
@@ -154,7 +157,6 @@
 					};
 					219055B025F9CCC80075EA59 = {
 						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 2190559125F9CA370075EA59;
 					};
 				};
 			};
@@ -205,6 +207,7 @@
 				219055A025F9CA370075EA59 /* MVVMUnitTesting.xcdatamodeld in Sources */,
 				2190559A25F9CA370075EA59 /* ViewController.swift in Sources */,
 				2190559625F9CA370075EA59 /* AppDelegate.swift in Sources */,
+				219055C025F9CE030075EA59 /* Calculator.swift in Sources */,
 				2190559825F9CA370075EA59 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +407,6 @@
 		219055B925F9CCC80075EA59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QLJ84Q3ZSY;
 				INFOPLIST_FILE = MVVMUnitTestingTests/Info.plist;
@@ -417,14 +419,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMUnitTesting.app/MVVMUnitTesting";
 			};
 			name = Debug;
 		};
 		219055BA25F9CCC80075EA59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QLJ84Q3ZSY;
 				INFOPLIST_FILE = MVVMUnitTestingTests/Info.plist;
@@ -437,7 +437,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMUnitTesting.app/MVVMUnitTesting";
 			};
 			name = Release;
 		};
