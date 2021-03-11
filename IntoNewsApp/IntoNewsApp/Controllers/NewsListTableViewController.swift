@@ -21,7 +21,19 @@ class NewsListTableViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=9aff2ae2edb14019be1df1fe522dee01")!
-        WebService().getArticles(url: url) { (_) in
+        WebService().getArticles(url: url) { (articles) in
+            if let articles = articles{
+                self.artileListViewModel = ArticleListViewModel(articles: articles)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
+                
+            }
+            
+            
+            
+        }
             
         }
     }
@@ -29,7 +41,7 @@ class NewsListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+
         return 0
     }
 
