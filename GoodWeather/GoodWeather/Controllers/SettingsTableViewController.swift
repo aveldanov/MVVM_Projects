@@ -2,8 +2,8 @@
 //  SettingsTableViewController.swift
 //  GoodWeather
 //
-//  Created by Mohammad Azam on 12/2/18.
-//  Copyright © 2018 Mohammad Azam. All rights reserved.
+//  Created by Veldanov, Anton on 3/11/21.
+//  Copyright © 2021 Mohammad Azam. All rights reserved.
 //
 
 import Foundation
