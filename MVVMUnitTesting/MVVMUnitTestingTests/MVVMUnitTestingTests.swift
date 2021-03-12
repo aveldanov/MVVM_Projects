@@ -20,10 +20,10 @@ class MVVMUnitTestingTests: XCTestCase {
 
     
     func test_addTwoNumbers(){
-        var calculator = Calculator()
+        let calculator = Calculator()
         let result = calculator.add(2,3)
         
-        XCTAssertEqual(result, 6)
+        XCTAssertEqual(result, 5)
     }
 
 }
