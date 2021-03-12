@@ -14,8 +14,9 @@
 		219055A025F9CA370075EA59 /* MVVMUnitTesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2190559E25F9CA370075EA59 /* MVVMUnitTesting.xcdatamodeld */; };
 		219055A225F9CA390075EA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219055A125F9CA390075EA59 /* Assets.xcassets */; };
 		219055A525F9CA390075EA59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219055A325F9CA390075EA59 /* LaunchScreen.storyboard */; };
-		219055B425F9CCC80075EA59 /* MVVMUnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219055B325F9CCC80075EA59 /* MVVMUnitTestingTests.swift */; };
 		219055C025F9CE030075EA59 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219055BF25F9CE030075EA59 /* Calculator.swift */; };
+		219055D525F9D1410075EA59 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219055BF25F9CE030075EA59 /* Calculator.swift */; };
+		219055DD25F9D1480075EA59 /* MVVMUnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219055B325F9CCC80075EA59 /* MVVMUnitTestingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,7 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219055B425F9CCC80075EA59 /* MVVMUnitTestingTests.swift in Sources */,
+				219055DD25F9D1480075EA59 /* MVVMUnitTestingTests.swift in Sources */,
+				219055D525F9D1410075EA59 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

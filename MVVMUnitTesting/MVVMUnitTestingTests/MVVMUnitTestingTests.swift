@@ -6,23 +6,24 @@
 //
 
 import XCTest
+@testable import MVVMUnitTesting
 
 class MVVMUnitTestingTests: XCTestCase {
-
+//    var sut: Calculator!
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+//       sut = Calculator()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+//        sut = nil
     }
 
     
     func test_addTwoNumbers(){
-        let calculator = Calculator()
+        var calculator = Calculator()
         let result = calculator.add(2,3)
         
-        XCTAssertEqual(result, 5)
+        XCTAssertEqual(result, 6)
     }
 
 }
