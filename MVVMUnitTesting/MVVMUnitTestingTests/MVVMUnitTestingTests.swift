@@ -16,7 +16,6 @@ class MVVMUnitTestingTests: XCTestCase {
 //       sut = Calculator()
         
          calculator = Calculator()
-
     }
 
     override func tearDownWithError() throws {
