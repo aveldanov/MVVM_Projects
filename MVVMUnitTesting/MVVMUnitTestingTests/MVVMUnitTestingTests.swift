@@ -14,7 +14,6 @@ class MVVMUnitTestingTests: XCTestCase {
     
     override func setUpWithError() throws {
 //       sut = Calculator()
-        
          calculator = Calculator()
     }
 
