@@ -13,7 +13,7 @@ class MVVMUnitTestingTests: XCTestCase {
     private var calculator: Calculator!
     
     override func setUpWithError() throws {
-//       sut = Calculator()
+       sut = Calculator()
          calculator = Calculator()
     }
 
