@@ -29,7 +29,7 @@ class MVVMUnitTestingTests: XCTestCase {
     
     
     func test_addTwoNumbers(){
-        let result = calculator.add(2,3)
+        let result = calculator.add(3,3)
         XCTAssertEqual(result, 5)
     }
 
