@@ -23,13 +23,13 @@ class MVVMUnitTestingTests: XCTestCase {
     }
 
     func test_subTwoNumbers(){
-        let result = calculator.subtract(5,2)
+        let result = calculator.subtract(5,8)
         XCTAssertEqual(result, 3)
     }
     
     
     func test_addTwoNumbers(){
-        let result = calculator.add(3,2)
+        let result = calculator.add(3,8)
         XCTAssertEqual(result, 5)
     }
 
