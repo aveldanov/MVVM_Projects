@@ -20,6 +20,6 @@ class Calculator{
     
     func mutiply(_ a:Int, _ b:Int){
         
-        
+        return a*b
     }
 }
