@@ -10,15 +10,15 @@ import Foundation
 class Calculator{
     
     
-    func add(_ a:Int, _ b: Int) -> Int{
+    func add(_ a:Int, _ b:Int) -> Int{
         return a+b
     }
     
-    func subtract(_ a:Int, _ b: Int) -> Int{
+    func subtract(_ a:Int, _ b:Int) -> Int{
         return a-b
     }
     
-    func mutiply(){
+    func mutiply(_ a:Int, _ b:Int){
         
         
     }
