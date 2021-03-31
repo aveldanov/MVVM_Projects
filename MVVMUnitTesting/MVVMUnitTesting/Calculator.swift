@@ -18,7 +18,7 @@ class Calculator{
         return a-b
     }
     
-    func mutiply(_ a:Int, _ b:Int){
+    func mutiply(_ a:Int, _ b:Int)->Int{
         return a*b
     }
 }
