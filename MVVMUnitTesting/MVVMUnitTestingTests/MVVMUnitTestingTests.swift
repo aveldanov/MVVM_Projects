@@ -34,7 +34,7 @@ class MVVMUnitTestingTests: XCTestCase {
     }
     
     func test_multiplyTwoNumbers(){
-        let result = calculator.mutiply(3, 15)
+        let result = calculator.mutiply(3, 195)
         XCTAssertEqual(result, 15)
     }
 
