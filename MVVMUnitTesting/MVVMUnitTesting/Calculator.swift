@@ -21,4 +21,6 @@ class Calculator{
     func mutiply(_ a:Int, _ b:Int)->Int{
         return a*b
     }
+    
+    
 }

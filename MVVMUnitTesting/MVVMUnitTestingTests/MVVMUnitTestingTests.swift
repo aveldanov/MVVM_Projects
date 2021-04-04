@@ -37,5 +37,9 @@ class MVVMUnitTestingTests: XCTestCase {
         let result = calculator.mutiply(3, 195)
         XCTAssertEqual(result, 15)
     }
+    
+    func test_divideTwoNumbers(){
+        
+    }
 
 }
