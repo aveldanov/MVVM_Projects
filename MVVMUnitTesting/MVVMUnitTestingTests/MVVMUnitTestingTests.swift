@@ -39,7 +39,7 @@ class MVVMUnitTestingTests: XCTestCase {
     }
     
     func test_divideTwoNumbers(){
-         let result = calculator.divide(5,2)
+        let result = calculator.divide(5,2)
         XCTAssertEqual(result, 2.5)
     }
 
