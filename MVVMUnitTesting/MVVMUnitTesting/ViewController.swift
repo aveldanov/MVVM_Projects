@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    func correctCalc(_ x: Int, _ y: Int){
+        
+    }
 }
 
