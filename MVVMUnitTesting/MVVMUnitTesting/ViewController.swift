@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     }
     
     func correctCalc(_ x: Int, _ y: Int){
-        return x/y+2
+        return x/y + 2
     }
 }
 
