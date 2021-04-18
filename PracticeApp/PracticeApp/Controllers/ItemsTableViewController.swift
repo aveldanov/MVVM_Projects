@@ -125,6 +125,7 @@ class ItemsTableViewController: UITableViewController {
       if let indexPath = tableView.indexPathForSelectedRow{
         print(itemsExternal[indexPath.row].name)
         
+        destinationVC.detailLabel.text = "TO"
 //        destinationVC.detailLabel.text = itemsExternal![indexPath.row].name
         
         
