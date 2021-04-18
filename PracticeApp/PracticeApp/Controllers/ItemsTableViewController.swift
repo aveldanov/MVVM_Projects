@@ -112,4 +112,16 @@ class ItemsTableViewController: UITableViewController {
     }
     */
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      let destinationVC = segue.destination as! ItemsTableViewController
+      // indexPath for selected row
+      if let indexPath = tableView.indexPathForSelectedRow{
+        
+        destinationVC.s
+        
+      }
+    }
+    
+    
 }

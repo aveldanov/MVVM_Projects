@@ -38,7 +38,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="arn-ps-gDh" id="1Jl-Vj-dOv"/>
-                                    <segue destination="ONP-fM-V2m" kind="presentation" trigger="accessoryAction" id="mMd-g9-UQA"/>
+                                    <segue destination="ONP-fM-V2m" kind="presentation" identifier="details" trigger="accessoryAction" id="mMd-g9-UQA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
