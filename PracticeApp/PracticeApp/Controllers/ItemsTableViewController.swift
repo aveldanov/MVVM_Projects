@@ -34,15 +34,13 @@ class ItemsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        print("SOMETING1")
 
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("SOMETING2")
         
-        print(self.itemsExternal)
+//        print(self.itemsExternal)
 
         return itemsExternal == nil ? 0 : itemsExternal.count
     }
@@ -125,7 +123,9 @@ class ItemsTableViewController: UITableViewController {
       let destinationVC = segue.destination as! DetailViewController
       // indexPath for selected row
       if let indexPath = tableView.indexPathForSelectedRow{
+        print(itemsExternal[indexPath.row].name)
         
+//        destinationVC.detailLabel.text = itemsExternal![indexPath.row].name
         
         
       }
