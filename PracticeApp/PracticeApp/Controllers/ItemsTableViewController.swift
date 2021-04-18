@@ -112,13 +112,21 @@ class ItemsTableViewController: UITableViewController {
     }
     */
 
+    //MARK: - TableView delegate methods
+
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      performSegue(withIdentifier: "goToDetails", sender: self)
+      
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      let destinationVC = segue.destination as! ItemsTableViewController
+      let destinationVC = segue.destination as! DetailViewController
       // indexPath for selected row
       if let indexPath = tableView.indexPathForSelectedRow{
         
-        destinationVC.s
+        
         
       }
     }
