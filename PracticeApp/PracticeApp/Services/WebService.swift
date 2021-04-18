@@ -14,11 +14,13 @@ struct WebService{
     func loadItems(url:URL, completion: @escaping ([Item]?)->() ){
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
+
             if let data = data{
-                let itemsList = try? JSONDecoder().decode([Item].self, from: data)
+                let itemsList = try! JSONDecoder().decode([Item].self, from: data)
                 completion(itemsList)
             }else{
-                print(error?.localizedDescription)
+                
+                completion(nil)
             }
             
         }.resume()

@@ -17,7 +17,18 @@
 		211CEF6E262BF0DB00F6B9FC /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CEF6D262BF0DB00F6B9FC /* ItemTableViewCell.swift */; };
 		211CEF7D262BF41B00F6B9FC /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CEF7C262BF41B00F6B9FC /* WebService.swift */; };
 		211CEF80262BFEB300F6B9FC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CEF7F262BFEB300F6B9FC /* DetailViewController.swift */; };
+		211CEF8A262C8DF900F6B9FC /* PracticeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CEF89262C8DF900F6B9FC /* PracticeAppUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		211CEF8C262C8DF900F6B9FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211CEF41262BEF8000F6B9FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 211CEF48262BEF8000F6B9FC;
+			remoteInfo = PracticeApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		211CEF49262BEF8000F6B9FC /* PracticeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +43,20 @@
 		211CEF6D262BF0DB00F6B9FC /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		211CEF7C262BF41B00F6B9FC /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		211CEF7F262BFEB300F6B9FC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		211CEF87262C8DF900F6B9FC /* PracticeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		211CEF89262C8DF900F6B9FC /* PracticeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAppUITests.swift; sourceTree = "<group>"; };
+		211CEF8B262C8DF900F6B9FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		211CEF46262BEF8000F6B9FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211CEF84262C8DF900F6B9FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				211CEF4B262BEF8000F6B9FC /* PracticeApp */,
+				211CEF88262C8DF900F6B9FC /* PracticeAppUITests */,
 				211CEF4A262BEF8000F6B9FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				211CEF49262BEF8000F6B9FC /* PracticeApp.app */,
+				211CEF87262C8DF900F6B9FC /* PracticeAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +134,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		211CEF88262C8DF900F6B9FC /* PracticeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				211CEF89262C8DF900F6B9FC /* PracticeAppUITests.swift */,
+				211CEF8B262C8DF900F6B9FC /* Info.plist */,
+			);
+			path = PracticeAppUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +163,24 @@
 			productReference = 211CEF49262BEF8000F6B9FC /* PracticeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		211CEF86262C8DF900F6B9FC /* PracticeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211CEF8E262C8DF900F6B9FC /* Build configuration list for PBXNativeTarget "PracticeAppUITests" */;
+			buildPhases = (
+				211CEF83262C8DF900F6B9FC /* Sources */,
+				211CEF84262C8DF900F6B9FC /* Frameworks */,
+				211CEF85262C8DF900F6B9FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				211CEF8D262C8DF900F6B9FC /* PBXTargetDependency */,
+			);
+			name = PracticeAppUITests;
+			productName = PracticeAppUITests;
+			productReference = 211CEF87262C8DF900F6B9FC /* PracticeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +192,10 @@
 				TargetAttributes = {
 					211CEF48262BEF8000F6B9FC = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					211CEF86262C8DF900F6B9FC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 211CEF48262BEF8000F6B9FC;
 					};
 				};
 			};
@@ -159,6 +213,7 @@
 			projectRoot = "";
 			targets = (
 				211CEF48262BEF8000F6B9FC /* PracticeApp */,
+				211CEF86262C8DF900F6B9FC /* PracticeAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +226,13 @@
 				211CEF59262BEF8400F6B9FC /* LaunchScreen.storyboard in Resources */,
 				211CEF56262BEF8400F6B9FC /* Assets.xcassets in Resources */,
 				211CEF54262BEF8000F6B9FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211CEF85262C8DF900F6B9FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +253,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		211CEF83262C8DF900F6B9FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211CEF8A262C8DF900F6B9FC /* PracticeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		211CEF8D262C8DF900F6B9FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 211CEF48262BEF8000F6B9FC /* PracticeApp */;
+			targetProxy = 211CEF8C262C8DF900F6B9FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		211CEF52262BEF8000F6B9FC /* Main.storyboard */ = {
@@ -367,6 +445,44 @@
 			};
 			name = Release;
 		};
+		211CEF8F262C8DF900F6B9FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QLJ84Q3ZSY;
+				INFOPLIST_FILE = PracticeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aveldanov.PracticeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PracticeApp;
+			};
+			name = Debug;
+		};
+		211CEF90262C8DF900F6B9FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QLJ84Q3ZSY;
+				INFOPLIST_FILE = PracticeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aveldanov.PracticeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PracticeApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -384,6 +500,15 @@
 			buildConfigurations = (
 				211CEF5E262BEF8400F6B9FC /* Debug */,
 				211CEF5F262BEF8400F6B9FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		211CEF8E262C8DF900F6B9FC /* Build configuration list for PBXNativeTarget "PracticeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211CEF8F262C8DF900F6B9FC /* Debug */,
+				211CEF90262C8DF900F6B9FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

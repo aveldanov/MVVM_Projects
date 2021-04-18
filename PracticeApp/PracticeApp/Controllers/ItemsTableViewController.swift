@@ -10,24 +10,35 @@ import UIKit
 class ItemsTableViewController: UITableViewController {
     
     private var itemsExternal : [Item]!
+    private var dataLoaded: Bool!
     
     let url = URL(string: "https://api.github.com/users/intuit/repos")!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        WebService().loadItems(url: url) { (items) in
-            
+        WebService().loadItems(url: url) { [self] (items) in
+            print(items)
+
             if let items = items{
                 
                 self.itemsExternal = items
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+                self.dataLoaded = true
+
                 
                 
+            }else{
+                self.dataLoaded = false
+                print("NO DATA LOADED!!")
+            }
+            
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
         }
+        
+        
+        tableView.accessibilityIdentifier = "table"
         
     }
 
@@ -42,22 +53,23 @@ class ItemsTableViewController: UITableViewController {
         
 //        print(self.itemsExternal)
 
-        return itemsExternal == nil ? 0 : itemsExternal.count
+        return itemsExternal == nil ? 1 : itemsExternal.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ItemTableViewCell else {
-            
-            
+
             fatalError("Fatal Error: cell not found")
-            
-            
-            
-            
         }
         
+        print("GOOOOOOOOOD")
+        guard dataLoaded == true else {
+            cell.nameLabel.text = "Error"
+            return cell
+        }
+        cell.accessibilityIdentifier = "cell\(indexPath.row)"
 
         cell.nameLabel.text = itemsExternal![indexPath.row].name
         
@@ -125,10 +137,10 @@ class ItemsTableViewController: UITableViewController {
       if let indexPath = tableView.indexPathForSelectedRow{
         print(itemsExternal[indexPath.row].name)
         
-        destinationVC.detailLabel.text = "TO"
-//        destinationVC.detailLabel.text = itemsExternal![indexPath.row].name
-        
-        
+        destinationVC.nameSelected = itemsExternal![indexPath.row].name
+        destinationVC.idSelected = itemsExternal[indexPath.row].id
+        destinationVC.licenseSelected = itemsExternal[indexPath.row].license?.key
+        destinationVC.linkSelected = itemsExternal[indexPath.row].owner?.received_events_url
       }
     }
     
