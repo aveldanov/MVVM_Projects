@@ -16,6 +16,7 @@
 		211CEF6B262BF01100F6B9FC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CEF6A262BF01100F6B9FC /* Item.swift */; };
 		211CEF6E262BF0DB00F6B9FC /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CEF6D262BF0DB00F6B9FC /* ItemTableViewCell.swift */; };
 		211CEF7D262BF41B00F6B9FC /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CEF7C262BF41B00F6B9FC /* WebService.swift */; };
+		211CEF80262BFEB300F6B9FC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CEF7F262BFEB300F6B9FC /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		211CEF6A262BF01100F6B9FC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		211CEF6D262BF0DB00F6B9FC /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		211CEF7C262BF41B00F6B9FC /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		211CEF7F262BFEB300F6B9FC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				211CEF67262BEFEF00F6B9FC /* ItemsTableViewController.swift */,
 				211CEF6D262BF0DB00F6B9FC /* ItemTableViewCell.swift */,
+				211CEF7F262BFEB300F6B9FC /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				211CEF6E262BF0DB00F6B9FC /* ItemTableViewCell.swift in Sources */,
 				211CEF4F262BEF8000F6B9FC /* SceneDelegate.swift in Sources */,
 				211CEF68262BEFEF00F6B9FC /* ItemsTableViewController.swift in Sources */,
+				211CEF80262BFEB300F6B9FC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
