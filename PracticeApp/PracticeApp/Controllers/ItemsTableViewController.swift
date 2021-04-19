@@ -16,7 +16,7 @@ class ItemsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        WebService().loadItems(url: url) { [self] (items) in
+        WebService().loadItems(url: url) { (items) in
             print(items)
 
             if let items = items{
